@@ -1,6 +1,6 @@
 {
   "name": "float-hsl2rgb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "converts [H,S,L] to [R,G,B]",
   "main": "index.js",
   "license": "MIT",
