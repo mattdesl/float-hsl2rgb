@@ -10,10 +10,11 @@ function hsl2rgb (hsl) {
     return [val, val, val]
   }
 
-  if (l < 0.5)
+  if (l < 0.5) {
     t2 = l * (1 + s)
-  else
+  } else {
     t2 = l + s - l * s
+  }
   t1 = 2 * l - t2
 
   rgb = [0, 0, 0]
@@ -26,14 +27,15 @@ function hsl2rgb (hsl) {
       t3--
     }
 
-    if (6 * t3 < 1)
+    if (6 * t3 < 1) {
       val = t1 + (t2 - t1) * 6 * t3
-    else if (2 * t3 < 1)
+    } else if (2 * t3 < 1) {
       val = t2
-    else if (3 * t3 < 2)
+    } else if (3 * t3 < 2) {
       val = t1 + (t2 - t1) * (2 / 3 - t3) * 6
-    else
+    } else {
       val = t1
+    }
 
     rgb[i] = val
   }

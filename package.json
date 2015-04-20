@@ -16,7 +16,7 @@
     "tape": "^4.0.0"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "standard && node test.js | tap-spec"
   },
   "keywords": [
     "hsl",
