@@ -23,6 +23,10 @@ All input/output uses the range [0 .. 1] for consistency and composition with ot
 
 Takes the `hsl` float array `[H, S, L]` and returns an `[R, G, B]` float representation.
 
+## Motivation
+
+This was adapted from @harthur's wonderful [color-convert](https://github.com/harthur/color-convert) module. Often I found myself only needing one function rather than all of them, and consistent input/output lends well to composition with other modules and WebGL. 
+
 ## License
 
 MIT, see [LICENSE.md](http://github.com/mattdesl/float-hsl2rgb/blob/master/LICENSE.md) for details.
